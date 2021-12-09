@@ -1,0 +1,36 @@
+:root {
+    --width: 1000px;
+    --height: 650px;
+}
+
+html {
+    background-color: rgb(246, 246, 246);
+}
+
+#game {
+    position: relative;
+    margin: 0 auto;
+    width: var(--width);
+    height: var(--height);
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#gameField {
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+}
+
+#display {
+    position: absolute;
+    bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    transform: translateX(200px);
+  }
